@@ -18,6 +18,7 @@ class AsyncFunctionsClient:
             headers=self.headers,
             verify=bool(verify),
             follow_redirects=True,
+            http2=True,
         )
 
     async def _request(

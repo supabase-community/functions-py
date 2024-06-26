@@ -18,6 +18,7 @@ class SyncFunctionsClient:
             headers=self.headers,
             verify=bool(verify),
             follow_redirects=True,
+            http2=True,
         )
 
     def _request(

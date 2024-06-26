@@ -12,7 +12,7 @@ repository = "https://github.com/supabase-community/functions-py"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-httpx =  ">=0.24,<0.28"
+httpx = {version = ">=0.24,<0.28", extras = ["http2"]}
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = ">=8.1.1,<10.0.0"
